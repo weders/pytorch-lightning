@@ -9,6 +9,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 
 ### Added
 
+- Enable PyTorch 1.7 compatibility ([#3541](https://github.com/PyTorchLightning/pytorch-lightning/pull/3541))
+
 - Added hooks to metric module interface ([#2528](https://github.com/PyTorchLightning/pytorch-lightning/pull/2528))
 
 - Added `LightningModule.to_torchscript` to support exporting as `ScriptModule` ([#3258](https://github.com/PyTorchLightning/pytorch-lightning/pull/3258/))
@@ -18,6 +20,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
    * class based interface + tests ([#3358](https://github.com/PyTorchLightning/pytorch-lightning/pull/3358))
 
 - Added error when AUROC metric is used for multiclass problems ([#3350](https://github.com/PyTorchLightning/pytorch-lightning/pull/3350))
+
+- Allow `ModelCheckpoint` monitor to be `None`, meaning it will always save ([3630](https://github.com/PyTorchLightning/pytorch-lightning/pull/3630))
 
 ### Changed
 
