@@ -1,4 +1,5 @@
 import signal
+from typing import Callable, Any
 
 
 class SignalConnector:
@@ -23,11 +24,11 @@ class SignalConnector:
         for signum, handler in self.original_handlers.items():
             signal.signal(signum, handler)
 
-    def register_signal(self, signum, handler):
+    def register_signal(self, signum: int, handler: Callable):
         """ Registers a signal handler and saves a reference to the original handler. """
         self.original_handlers.update({signum: signal.getsignal(signum)})
         signal.signal(signum, handler)
 
-    def default_teardown(self, signum, frame):  # pragma: no-cover
+    def default_teardown(self, signum: int, frame: Any):  # pragma: no-cover
         """ This default teardown raises KeyboardInterrupt and lets Trainer handle the graceful shutdown. """
         raise KeyboardInterrupt
