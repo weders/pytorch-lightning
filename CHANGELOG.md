@@ -126,9 +126,14 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
    * precision plugins ([#3504](https://github.com/PyTorchLightning/pytorch-lightning/pull/3504))
    * Result - make monitor default to `checkpoint_on` to simplify ([#3571](https://github.com/PyTorchLightning/pytorch-lightning/pull/3571))
    * reference to the Trainer on the `LightningDataModule` ([#3684](https://github.com/PyTorchLightning/pytorch-lightning/pull/3684))
-   * add `.log` to lightning module ([#3686](https://github.com/PyTorchLightning/pytorch-lightning/pull/3686))
+   * add `.log` to lightning module ([#3686](https://github.com/PyTorchLightning/pytorch-lightning/pull/3686),
+        [#3699](https://github.com/PyTorchLightning/pytorch-lightning/pull/3699),
+        [#3701](https://github.com/PyTorchLightning/pytorch-lightning/pull/3701),
+        [#3704](https://github.com/PyTorchLightning/pytorch-lightning/pull/3704),
+        [#3715](https://github.com/PyTorchLightning/pytorch-lightning/pull/3715))
    * enable tracking original metric when step and epoch are both true ([#3685](https://github.com/PyTorchLightning/pytorch-lightning/pull/3685))
    * deprecated results obj, added support for simpler comms ([#3681](https://github.com/PyTorchLightning/pytorch-lightning/pull/3681))
+   * move backends back to individual files ([#3712](https://github.com/PyTorchLightning/pytorch-lightning/pull/3712))
 
 - Renaming of precision recall metric ([#3308](https://github.com/PyTorchLightning/pytorch-lightning/pull/3308))
 
