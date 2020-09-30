@@ -76,9 +76,6 @@ class AcceleratorConnector:
 
         # override with environment flag
         gpus = os.environ.get('PL_TRAINER_GPUS', gpus)
-        print('-'*100)
-        print('env GPUs', gpus)
-        print('-'*100)
         self.trainer.gpus = gpus
 
         # for gpus allow int, string and gpu list
